@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 设置 定义mybatis的一些全局性设置 -->
+    <settings>
+        <!-- 具体的参数名和参数值 -->
+        <setting name="safeRowBoundsEnabled" value="true"/>
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="useGeneratedKeys" value="true"/>
+    </settings>
+    
+    <!-- 类型别名:类型别名是Java类型的简称，可以逐个设置和整个包设置 -->
+    <typeAliases>
+        <!-- 将指定包中所有类的简单类名作为别名 -->
+        <package name="com.sglm.dao" />
+    </typeAliases>
+
+    <!-- 类型处理器：定义Java类型与数据库中的数据类型之间的转换关系 -->
+    <!--<typeHandlers>-->
+        <!---->
+    <!--</typeHandlers>-->
+    
+    <!-- 插件：mybatis的插件，插件可以修改mybatis的内部运行规则 -->
+    <!--<plugins>-->
+        <!--<plugin interceptor=""></plugin>-->
+    <!--</plugins>-->
+    
+</configuration>
